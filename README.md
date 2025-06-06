@@ -1,80 +1,32 @@
-🏦 Per Scholas Capstone Project
-This project was developed as part of the Per Scholas Data Engineering program. The objective was to build a robust ETL data pipeline for a financial institution using PySpark, MySQL, and Python CLI tools. The pipeline performs data extraction, transformation, and loading (ETL), and it includes business intelligence visualizations.
+# 🏦 Per Scholas Capstone Project
 
-📁 Project Structure
-extract(): Reads data from local JSON files and a remote API.
+This project was developed as part of the **Per Scholas Data Engineering** program. The objective was to build a robust ETL data pipeline for a financial institution using **PySpark**, **MySQL**, and **Python CLI** tools. The pipeline performs **data extraction**, **transformation**, and **loading (ETL)**, with built-in business intelligence visualizations.
 
-transform(): Cleans and standardizes customer, credit, and branch data using PySpark.
+---
 
-load(): Loads the transformed data into a MySQL relational database.
+## 📁 Project Structure
 
-cli.py: Provides a Command Line Interface to interact with the data (e.g., query by ZIP, SSN, or date range).
+| Component        | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `pipeline.py`      | Performs an ETL Process on data from the local JSON files Loan API      |
+| `cli.py`         | CLI for querying data by ZIP code, SSN, or date range                       |
+| `visualizations.py` | Generates charts to visualize key business metrics using Matplotlib/Seaborn |
 
-visualizations.py: Generates charts to represent key metrics using Matplotlib and Seaborn.
+---
 
-🧰 Tech Stack
-Tool	Purpose
-Python 3	Core programming language
-PySpark	Big data processing and transformation
-MySQL	Relational database for storing transformed data
-mysql-connector-python	Python library for interacting with MySQL
-Matplotlib / Seaborn	Data visualization libraries
-Pandas	Used alongside PySpark for some data manipulation
-Requests	To access external API data
-Rich	Enhanced console output formatting
-VS Code	Development environment (recommended)
+## 🧰 Tech Stack
 
-🔧 Installation
-bash
-Copy
-Edit
+| Tool                     | Purpose                                         |
+|--------------------------|-------------------------------------------------|
+| **Python3**                  | Core programming language                       |
+| **Apache Spark**             | Big data processing and transformation          |
+| **MySQL**                    | Relational database for structured storage      |
+
+---
+
+## 🔧 Installation
+
+```bash
 # Clone the repository
 git clone https://github.com/ATrubyArena/Per-Scholas.git
 cd Per-Scholas/Capstone
-
-## ✅ Features
-
-- Ingests data from both local JSON files and an external API
-- Cleans and standardizes data using PySpark
-- Stores data in a MySQL relational database
-- Query customer and transaction data by ZIP code, SSN, or date
-- Generates approval rate and transaction visualizations
-- Command Line Interface (CLI) for user interaction
-
-## 🛠️ Usage
-
-### Run ETL Pipeline
-```bash
-python etl.py
-
-Launch CLI Tool
-bash
-python cli.py
-
-Generate Visualizations
-bash
-python visuals.py
-
-## 🧪 Testing
-
-This project was manually tested using various test cases (e.g., invalid ZIP, missing SSN, edge dates). PySpark transformations were validated with `.show()` and `.describe()` during development.
-
-## 🗂️ Data Sources
-
-- `cdw_sapp_customer.json`, `cdw_sapp_credit.json`, `cdw_sapp_branch.json`: Local datasets
-- `loan_data.json`: Pulled from [LoanDataset GitHub API](https://github.com/platformps/LoanDataset)
-🔐 6. Security Notes (Optional)
-Remind users not to hard-code credentials and how to manage them safely.
-
-## 🔐 Security Notes
-
-- Use environment variables or a `.env` file to store database credentials.
-- Never upload `.env` or credential files to version control.
-
-🧑‍💻 7. Contributors / Credits
-Kenny Copas, Juan Hun
-
-
-## 👨‍🏫 Credits
-
-This project was developed during the Per Scholas Data Engineering program with guidance from instructors and support from peers.
