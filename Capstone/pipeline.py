@@ -1,6 +1,5 @@
 
 import json
-
 from pyspark.sql import SparkSession
 from rich import print
 import requests
@@ -107,7 +106,7 @@ def transform(customer_df, branch_df, credit_df):
 
 
 #creating tables in SQL
-def load(df, table_name):
+def load(df, table_name): #creating a load function
     df.write\
     .format("jdbc")\
     .option("url", "jdbc:mysql://localhost:3306/creditcard_capstone_db")\
@@ -118,7 +117,7 @@ def load(df, table_name):
     .mode("overwrite")\
     .save()
 
-def etl():
+def etl(): #Creating ETL function
 
     spark = SparkSession.builder\
         .appName("CDW Sapp")\
@@ -141,3 +140,5 @@ def etl():
     load(branch_df, "branch_data")
     load(credit_df, "credit_data")
     load(loan_df, "cdw_sapp_loan_application")
+
+    return customer_df, branch_df, credit_df

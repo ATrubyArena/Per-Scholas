@@ -2,7 +2,6 @@ from datetime import datetime
 import calendar
 import mysql.connector as dbconnect
 from mysql.connector import Error
-
 from constants import SCRIPTS
 
 
