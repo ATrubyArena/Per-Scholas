@@ -75,6 +75,6 @@ For questions, feedback, or collaboration opportunities:
 
 - **Author:** Alexander Truby-Arena  
 - **GitHub:** [ATrubyArena](https://github.com/ATrubyArena)  
-- **Email:** [alerxander.trubyarena@gmail.com]
+- **Email:** [alerxander.trubyarena@gmail.com](alerxander.trubyarena@gmail.com)
 
 ---
