@@ -6,5 +6,5 @@ requirement was to create a working CLI (command line interface) as well as visu
 ### Installation
 
 ```bash
-git clone https://github.com/ATrubyArena/capstone.git
+[git clone https://github.com/ATrubyArena/capstone.git](https://github.com/ATrubyArena/Per-Scholas/tree/main/Capstone)
 ```
