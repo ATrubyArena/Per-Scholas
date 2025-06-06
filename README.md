@@ -31,10 +31,3 @@ Edit
 # Clone the repository
 git clone https://github.com/ATrubyArena/Per-Scholas.git
 cd Per-Scholas/Capstone
-
-# (Optional) Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
-# Install required packages
-pip install -r requirements.txt
